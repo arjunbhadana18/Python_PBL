@@ -1,1 +1,110 @@
+# 📘 Student Performance Prediction using Machine Learning
+
+## 🎯 Objective
+
+The objective of this project is to analyze student data and predict their final academic performance using machine learning techniques. The project also aims to identify key factors that influence student results.
+
+---
+
+## 📂 Dataset Description
+
+The dataset contains information about students such as:
+
+* Age
+* Gender
+* Study Hours
+* Attendance
+* Previous Scores
+* Final Grade (Target Variable)
+
+The dataset required cleaning due to missing values, inconsistent data, and incorrect entries.
+
+---
+
+## 🧹 Data Cleaning
+
+The following steps were performed:
+
+* Removed irrelevant columns (Student_ID, Student_Name)
+* Handled missing values using mean/median/mode
+* Corrected data types (e.g., Age converted to numeric)
+* Removed unrealistic values (e.g., negative or very high age)
+
+---
+
+## 📊 Exploratory Data Analysis (EDA)
+
+EDA was performed to understand the dataset using visualizations:
+
+* Correlation heatmap to analyze relationships between variables
+* Distribution plots to understand feature spread
+
+### Key Observations:
+
+* Study hours and attendance positively affect performance
+* Some features show weak correlation and can be removed
+
+---
+
+## ⚙️ Data Preprocessing
+
+The dataset was prepared for machine learning:
+
+* Converted categorical data into numerical form (encoding)
+* Feature selection was performed using correlation and statistical methods
+* Data scaling was applied using StandardScaler
+
+---
+
+## 🎯 Feature Selection
+
+Feature selection was done to improve model performance by selecting the most relevant features.
+Techniques used:
+
+* Correlation analysis
+* SelectKBest
+
+---
+
+## 🤖 Model Building
+
+A machine learning model was trained to predict student performance.
+Models used may include:
+
+* Random Forest
+* Logistic Regression
+
+---
+
+## 📊 Model Evaluation
+
+The model was evaluated using:
+
+* Accuracy score
+* Confusion matrix
+
+---
+
+## 📈 Results & Conclusion
+
+The model successfully predicted student performance with good accuracy.
+Key factors affecting performance include:
+
+* Study hours
+* Attendance
+* Previous academic results
+
+---
+
+## 🚀 Future Improvements
+
+* Use larger and real-world datasets
+* Apply advanced models like XGBoost
+* Build a real-time prediction system
+
+---
+
+## 🧠 Conclusion
+
+This project demonstrates how data cleaning, EDA, preprocessing, and machine learning can be combined to derive meaningful insights and predictions from student data.
 
