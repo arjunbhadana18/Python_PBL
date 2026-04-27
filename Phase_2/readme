@@ -1,1 +1,45 @@
+# Phase 2: Data Preprocessing
 
+## Objective
+
+The objective of this phase is to prepare the cleaned dataset for machine learning by transforming and organizing the data into a suitable format.
+
+---
+
+## Encoding Categorical Data
+
+Categorical features such as Gender were converted into numerical format using encoding techniques. This step is necessary because machine learning models can only work with numerical data.
+
+---
+
+## Data Transformation
+
+The dataset already contained numerical values for Final_Grade, so no mapping was required. A new feature called Result was created based on Final_Grade to classify students as pass or fail.
+
+---
+
+## Feature Selection
+
+Irrelevant features such as Student_ID and Student_Name were removed. Feature importance was analyzed using correlation, and only useful features were retained for model training.
+
+---
+
+## Normalization / Standardization
+
+Data scaling was applied to ensure all features are on a similar scale. Standardization was used to transform the data so that it has a mean of 0 and a standard deviation of 1. This improves model performance and stability.
+
+---
+
+## Final Output
+
+After preprocessing, the dataset was:
+
+* Clean and free from inconsistencies
+* Converted into numerical format
+* Scaled and ready for model training
+
+---
+
+## Conclusion of Phase 2
+
+This phase ensured that the dataset is properly prepared for machine learning. Proper preprocessing helps improve model accuracy and prevents errors during training.
