@@ -2,44 +2,50 @@
 
 ## Objective
 
-The objective of this phase is to prepare the cleaned dataset for machine learning by transforming and organizing the data into a suitable format.
+The objective of this phase is to prepare the cleaned dataset for machine learning by transforming it into a suitable format for model training.
 
 ---
 
 ## Encoding Categorical Data
 
-Categorical features such as Gender were converted into numerical format using encoding techniques. This step is necessary because machine learning models can only work with numerical data.
+Categorical features such as Gender were converted into numerical format using one-hot encoding. This step ensures that machine learning algorithms can process categorical information effectively.
 
 ---
 
 ## Data Transformation
 
-The dataset already contained numerical values for Final_Grade, so no mapping was required. A new feature called Result was created based on Final_Grade to classify students as pass or fail.
+The Final_Grade column was already in numerical form, so no additional mapping was required. A new feature called Result was created to classify students as pass (1) or fail (0) based on their final grade.
 
 ---
 
 ## Feature Selection
 
-Irrelevant features such as Student_ID and Student_Name were removed. Feature importance was analyzed using correlation, and only useful features were retained for model training.
+Irrelevant columns such as Student_ID and Student_Name were removed. Feature importance was analyzed using correlation, and only meaningful features were retained for further processing.
 
 ---
 
-## Normalization / Standardization
+## Data Standardization
 
-Data scaling was applied to ensure all features are on a similar scale. Standardization was used to transform the data so that it has a mean of 0 and a standard deviation of 1. This improves model performance and stability.
+Standardization was applied using StandardScaler to scale the feature values. This ensures that all features have a mean of 0 and a standard deviation of 1, which improves model performance.
+
+---
+
+## Class Imbalance
+
+The dataset was checked for class imbalance using the Result column. The distribution was approximately balanced (around 60–40), so no special techniques such as oversampling or undersampling were required.
 
 ---
 
 ## Final Output
 
-After preprocessing, the dataset was:
+After preprocessing, the dataset:
 
-* Clean and free from inconsistencies
-* Converted into numerical format
-* Scaled and ready for model training
+* Contains only relevant features
+* Has categorical data encoded
+* Is scaled and ready for model training
 
 ---
 
 ## Conclusion of Phase 2
 
-This phase ensured that the dataset is properly prepared for machine learning. Proper preprocessing helps improve model accuracy and prevents errors during training.
+This phase successfully prepared the dataset for machine learning by applying encoding, transformation, feature selection, and scaling techniques. The processed data is now suitable for building and evaluating predictive models.
