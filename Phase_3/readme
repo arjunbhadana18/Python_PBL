@@ -1,1 +1,78 @@
+# Phase 3: Model Building and Evaluation
+
+## Objective
+
+The objective of this phase is to build a machine learning model using the preprocessed dataset and evaluate its performance in predicting student outcomes.
+
+---
+
+## Data Preparation
+
+The processed dataset was divided into:
+
+* Features (X): All input variables
+* Target (y): Final_Grade
+
+The data was then split into training and testing sets to evaluate performance on unseen data.
+
+---
+
+## Train-Test Split
+
+The dataset was split as follows:
+
+* 80% for training
+* 20% for testing
+
+This ensures that the model is trained on one portion of data and tested on another.
+
+---
+
+## Model Used
+
+### Random Forest Regressor
+
+Since the target variable Final_Grade is numerical, a regression model was used.
+
+Random Forest Regressor was chosen because:
+
+* It handles non-linear relationships effectively
+* It reduces overfitting
+* It provides reliable performance without heavy tuning
+
+---
+
+## Model Training
+
+The model was trained using the training dataset to learn patterns between input features and the target variable.
+
+---
+
+## Prediction
+
+After training, predictions were made on the test dataset to evaluate how well the model performs on unseen data.
+
+---
+
+## Model Evaluation
+
+The model was evaluated using:
+
+* Mean Absolute Error (MAE)
+* Mean Squared Error (MSE)
+* R² Score
+
+These metrics help measure how close the predicted values are to the actual values.
+
+---
+
+## Results
+
+The model achieved satisfactory performance in predicting student grades. The predictions were reasonably close to the actual values, indicating that the model learned meaningful patterns from the data.
+
+---
+
+## Conclusion of Phase 3
+
+The machine learning model was successfully trained and evaluated. The results show that student performance can be effectively predicted using features such as study hours, attendance, and previous academic performance.
 
